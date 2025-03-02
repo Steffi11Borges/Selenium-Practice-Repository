@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Blinkitsearch {
-//PULL BACK
+//PULL BACK data to Ts framework
 	public static void main(String[] args) {
 		WebDriver driver;
 		WebDriverManager.edgedriver().setup();
