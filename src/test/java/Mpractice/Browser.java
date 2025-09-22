@@ -34,7 +34,7 @@ public class Browser {
 
         driver1.findElement(By.name("pwd")).sendKeys(PASSWORD);
         driver1.findElement(By.id("loginButton")).click();
-        //today 22-09-2025 comming from github
+        //today 22-09-2025 commiting from github
 
 	}
 
