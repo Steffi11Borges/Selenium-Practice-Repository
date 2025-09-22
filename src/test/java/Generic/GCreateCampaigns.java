@@ -11,6 +11,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -22,9 +23,14 @@ public class GCreateCampaigns {
 	public static void main(String[] args) throws Throwable {
 		//07-06-2023
 		
+//		WebDriver driver;
+//		WebDriverManager.edgedriver().setup();
+//		driver=new EdgeDriver();
+//	
+		
 		WebDriver driver;
-		WebDriverManager.edgedriver().setup();
-		driver=new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
 		
 		//09-06-2023
 		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

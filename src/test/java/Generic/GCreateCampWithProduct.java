@@ -12,8 +12,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-
+import org.openqa.selenium.chrome.ChromeDriver;
 import GenericUtility.Webdriver_utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,9 +21,13 @@ public class GCreateCampWithProduct {
 	public static void main(String[] args) throws Throwable {
 	// 02-06-2023 to 07-06-2023
 		
+//		WebDriver driver;
+//		WebDriverManager.edgedriver().setup();
+//		driver=new EdgeDriver();
+		
 		WebDriver driver;
-		WebDriverManager.edgedriver().setup();
-		driver=new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
 		
 		driver.get("http://localhost:8888/");
 		driver.manage().window().maximize();

@@ -14,3 +14,26 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+<!--  all classes related to GenericOptimised package are  executed here in a group
+smoke or regression test can be done
+
+Group Execution = Logical filtering (by tags like smoke/regression)
+Selective execution.
+Run only smoke group
+Runs tests belonging to specified groups (e.g., smoke, regression)	
+
+
+Batch Execution = Running multiple classes together.
+Sequential execution of classes
+Run LoginTests + CartTests
+Runs multiple test classes together in one suite	
+
+
+Parallel Execution = Running tests at the same time (multi-threading).
+Simultaneous execution
+Run test1, test2, test3 at the same time
+Runs tests simultaneously in multiple threads
+
+
+-->

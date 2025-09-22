@@ -2,6 +2,7 @@ package Organization;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -11,9 +12,13 @@ public class CreateCampaign {
 	public static void main(String[] args) throws Throwable {
 		// 02-06-2023 to 06-06-2023
  		
+//				WebDriver driver;
+//				WebDriverManager.edgedriver().setup();
+//				driver=new EdgeDriver();
+				
 				WebDriver driver;
-				WebDriverManager.edgedriver().setup();
-				driver=new EdgeDriver();
+				WebDriverManager.chromedriver().setup();
+				driver=new ChromeDriver();
 				
 				driver.get("http://localhost:8888/");
 				driver.manage().window().maximize();

@@ -10,18 +10,19 @@ public class HardAssertEx {
 	public void m1()
 	{
 		System.out.println("step1");
-		String expData = "Qspiders";
-		String actData = "qspiders";
+		String expData = "steffi";
+		String actData = "steffi";
 		Assert.assertEquals(actData, expData);
+		Assert.assertEquals(true, false);
+
 		System.out.println("step2");
-		System.out.println("step3");
 	}
 	
 	@Test
 	public void m2()
 	{
-		System.out.println("step4");
-		Assert.assertEquals(true, false);
+		System.out.println("step3");
+		Assert.assertEquals(false, false);
 		
 	}
 

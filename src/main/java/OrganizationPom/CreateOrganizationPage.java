@@ -12,7 +12,7 @@ public class CreateOrganizationPage {
 			{
 				PageFactory.initElements(driver, this);	
 				}
-			// 'this' keyword holds the address of the 'LoginPage' start executing
+			// 'this' keyword holds the address of the 'CreateOrganizationPage' start executing
 			
 			
 			//Declaration

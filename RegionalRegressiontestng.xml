@@ -11,3 +11,7 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+<!--in GenericOptimised package iam running only 
+OrganizationModuleTest class including only this 
+excluding other class -->

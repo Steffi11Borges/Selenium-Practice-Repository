@@ -58,7 +58,7 @@ ValidationPage valid= new ValidationPage(driver);
 
 Assert.assertEquals(actData, orgName);
 //Calling from POM		
-home.logout(driver); //23-06-2023
+home.logout(driver); //23-06-2023 
 
 
 	}

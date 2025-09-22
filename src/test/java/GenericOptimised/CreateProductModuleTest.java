@@ -1,6 +1,7 @@
 package GenericOptimised;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
@@ -26,9 +27,13 @@ public class CreateProductModuleTest {
 		Webdriver_utility wlib=new Webdriver_utility();
 		
 		//Launching browser
+//		WebDriver driver;
+//		WebDriverManager.edgedriver().setup();
+//		driver=new EdgeDriver();
+		
 		WebDriver driver;
-		WebDriverManager.edgedriver().setup();
-		driver=new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
 		
 		//login to application //file utility 
 		String URL = flib.getStringKeyAndValue("url");

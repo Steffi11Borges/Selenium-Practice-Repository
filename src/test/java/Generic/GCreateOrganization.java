@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import GenericUtility.Excel_utility;
 import GenericUtility.Java_Utility;
@@ -16,9 +17,13 @@ public class GCreateOrganization {
 	public static void main(String[] args) throws Throwable {
 		// 07-06-2023
 		
+//		WebDriver driver;
+//		WebDriverManager.edgedriver().setup();
+//		driver=new EdgeDriver();
+		
 		WebDriver driver;
-		WebDriverManager.edgedriver().setup();
-		driver=new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
 		
 		/*
 		driver.get("http://localhost:8888/");

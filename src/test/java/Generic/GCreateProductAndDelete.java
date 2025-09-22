@@ -12,6 +12,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -22,10 +23,14 @@ public class GCreateProductAndDelete {
 	// 07-06-2023
 		
 
-		WebDriver driver;
-		WebDriverManager.edgedriver().setup();
-		driver=new EdgeDriver();
+//		WebDriver driver;
+//		WebDriverManager.edgedriver().setup();
+//		driver=new EdgeDriver();
 		
+		WebDriver driver;
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+//		
 		driver.get("http://localhost:8888/");
 		driver.manage().window().maximize();
 		driver.findElement(By.name("user_name")).sendKeys("admin");

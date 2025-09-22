@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
@@ -29,9 +30,13 @@ public class CreateDeleteProductModuleTest{
 		Webdriver_utility wlib=new Webdriver_utility();
 		
 		//Launching browser
+//				WebDriver driver;
+//				WebDriverManager.edgedriver().setup();
+//				driver=new EdgeDriver();
+//				
 				WebDriver driver;
-				WebDriverManager.edgedriver().setup();
-				driver=new EdgeDriver();
+				WebDriverManager.chromedriver().setup();
+				driver=new ChromeDriver();
 		
 		//login to application
 		String URL = flib.getStringKeyAndValue("url");

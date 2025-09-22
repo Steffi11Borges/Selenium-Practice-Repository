@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,9 +16,13 @@ public class UrlPropertiesLaunch {
 		
 //    08-06-2023
 	
+//			WebDriver driver;
+//			WebDriverManager.edgedriver().setup();
+//			driver=new EdgeDriver();
+			
 			WebDriver driver;
-			WebDriverManager.edgedriver().setup();
-			driver=new EdgeDriver();
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
 			
 		    FileInputStream fis=new FileInputStream("./src/test/resources/AdvSelenium.properties");
 			Properties pro=new Properties();

@@ -28,8 +28,6 @@ public class ExcelFetchsingleData {
 	Cell cel = rw.getCell(0);
 	String val = cel.getStringCellValue();
 	
-    System.out.println(val);
-
 	
 	
 	

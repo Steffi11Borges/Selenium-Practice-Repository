@@ -10,20 +10,17 @@ public class SoftAssertEx {
 		public void m1()
 		{
 			System.out.println("step1");
-			System.out.println("step2");
-			System.out.println("step3");
+			
 			SoftAssert soft = new SoftAssert();
-			soft.assertEquals(false, true);
-			System.out.println("step4");
-			System.out.println("step5");
+			soft.assertEquals(true, true);
 			soft.assertAll();
 		}
 		
 		@Test
-		public void m2()
+		public void m2() 
 		{
-			String expData = "Qspiders";
-			String actData = "qspiders";
+			String expData = "steffi";
+			String actData = "steffi";
 			SoftAssert Soft = new SoftAssert();
             Soft.assertEquals(actData, expData);
             Soft.assertAll();

@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GenericOptimised.CreateProductModuleTest">
+      <class name="GenericOptimised.OrganizationModuleTest">
         <methods>
-          <include name="createProductModuleTest"/>
+          <include name="organizationModuleTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- GenericOptimised.CreateProductModuleTest -->
+      </class> <!-- GenericOptimised.OrganizationModuleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
