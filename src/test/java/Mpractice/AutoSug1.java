@@ -10,7 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AutoSug1 {
-
+//coomit from jira
 	public static void main(String[] args) throws Throwable {
 		WebDriver driver;
 		WebDriverManager.edgedriver().setup();
@@ -35,3 +35,4 @@ public class AutoSug1 {
 	}
 
 }
+
