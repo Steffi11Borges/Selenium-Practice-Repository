@@ -6,15 +6,32 @@
   
     <!-- plugin to execute in maven command prompt -->
   <build>
-	  <plugins>
-		<plugin>
-		<artifactId>maven-compiler-plugin</artifactId>
-		<version>3.8.1</version>
-		<configuration>
-			<release>16</release>
-		</configuration>
-        </plugin>    
-	  </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.14.0</version>
+      
+        </plugin>
+      
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.4</version>
+           <configuration>
+            <!-- put your configurations here -->
+           <suiteXmlFiles>
+            <suiteXmlFile>testing.xml</suiteXmlFile>
+                        <suiteXmlFile>grouping.xml</suiteXmlFile>
+
+            </suiteXmlFiles>
+              </configuration>
+
+                </plugin>
+      </plugins>
+         </pluginManagement>  
+
   </build>
   
   <!-- plugin to execute in jenkins -->

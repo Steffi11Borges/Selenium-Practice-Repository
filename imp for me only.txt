@@ -1,0 +1,1 @@
+run.bat file we can create by changing text file to bat add project path and mvn command run directly 
